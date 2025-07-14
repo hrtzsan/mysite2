@@ -1,13 +1,166 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลส่วนตัวนักศึกษามหาวิทยาลัย</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .profile-pic {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile-pic img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #3498db;
+        }
+        .info-group {
+            margin-bottom: 15px;
+        }
+        .info-group label {
+            font-weight: bold;
+            color: #555;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .info-group span {
+            display: block;
+            background-color: #ecf0f1;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background-color: #ecf0f1;
+            padding: 8px 15px;
+            margin-bottom: 8px;
+            border-radius: 5px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .section-header {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ข้อมูลส่วนตัวนักศึกษา 🎓</h1>
+
+        <div class="profile-pic">
+            <img src="https://via.placeholder.com/150" alt="รูปโปรไฟล์ของคุณ">
+            <p><strong>[ชื่อ-นามสกุลของคุณ]</strong></p>
+        </div>
+
+        <div class="section-header">ข้อมูลทั่วไป</div>
+        <div class="info-group">
+            <label>ชื่อ-นามสกุล:</label>
+            <span>[ใส่ชื่อ-นามสกุลของคุณ]</span>
+        </div>
+        <div class="info-group">
+            <label>รหัสนักศึกษา:</label>
+            <span>[ใส่รหัสนักศึกษาของคุณ]</span>
+        </div>
+        <div class="info-group">
+            <label>คณะ:</label>
+            <span>[ใส่ชื่อคณะของคุณ]</span>
+        </div>
+        <div class="info-group">
+            <label>สาขาวิชา:</label>
+            <span>[ใส่ชื่อสาขาวิชาของคุณ]</span>
+        </div>
+        <div class="info-group">
+            <label>ชั้นปี:</label>
+            <span>[ระบุชั้นปี เช่น ชั้นปีที่ 1, 2, 3, 4]</span>
+        </div>
+        <div class="info-group">
+            <label>วันเกิด:</label>
+            <span>[วัน/เดือน/ปีเกิด เช่น 01 มกราคม 2545]</span>
+        </div>
+
+        <div class="section-header">ข้อมูลติดต่อ</div>
+        <div class="info-group">
+            <label>อีเมล:</label>
+            <span><a href="mailto:[ใส่อีเมลของคุณ]">[ใส่อีเมลของคุณ]</a></span>
+        </div>
+        <div class="info-group">
+            <label>เบอร์โทรศัพท์:</label>
+            <span>[ใส่เบอร์โทรศัพท์ของคุณ]</span>
+        </div>
+        <div class="info-group">
+            <label>ที่อยู่ปัจจุบัน:</label>
+            <span>[ระบุที่อยู่ปัจจุบันของคุณ]</span>
+        </div>
+
+        <div class="section-header">ความสนใจและทักษะ</div>
+        <div class="info-group">
+            <label>ความสนใจ:</label>
+            <ul>
+                <li>[ความสนใจ 1 เช่น การอ่านหนังสือ]</li>
+                <li>[ความสนใจ 2 เช่น การเขียนโปรแกรม]</li>
+                <li>[ความสนใจ 3 เช่น การเล่นดนตรี]</li>
+            </ul>
+        </div>
+        <div class="info-group">
+            <label>ทักษะ:</label>
+            <ul>
+                <li>[ทักษะ 1 เช่น Microsoft Office]</li>
+                <li>[ทักษะ 2 เช่น การนำเสนอ]</li>
+                <li>[ทักษะ 3 เช่น ภาษาอังกฤษ]</li>
+            </ul>
+        </div>
+
+        <div class="section-header">ช่องทางติดต่ออื่นๆ (ถ้ามี)</div>
+        <div class="info-group">
+            <label>LinkedIn:</label>
+            <span><a href="[ลิงก์ LinkedIn ของคุณ]" target="_blank">[ลิงก์ LinkedIn ของคุณ]</a></span>
+        </div>
+        <div class="info-group">
+            <label>GitHub:</label>
+            <span><a href="[ลิงก์ GitHub ของคุณ]" target="_blank">[ลิงก์ GitHub ของคุณ]</a></span>
+        </div>
+        <div class="info-group">
+            <label>เว็บไซต์ส่วนตัว/บล็อก:</label>
+            <span><a href="[ลิงก์เว็บไซต์ส่วนตัวของคุณ]" target="_blank">[ลิงก์เว็บไซต์ส่วนตัวของคุณ]</a></span>
+        </div>
+
+    </div>
+</body>
 </html>
